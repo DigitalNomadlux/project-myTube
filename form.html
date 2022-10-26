@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./styleForm.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyTube - New Video</title>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a class="active" href="./index.html">Home</a></li>
+      <li><a href="./pages/collection1.html">Collection 1</a></li>
+      <li><a href="./pages/collection2.html">Collection 2</a></li>
+      <li><a href="./pages/collection3.html">Collection 3</a></li>
+      <li><a href="./form.html">New Video</a></li>
+    </ul>
+      <hr class="navDiv1">
+      <hr class="navDiv2">
+    <div class="card">
+      <img src="../imgs/turturro.jpg" alt="Austin Turturro" style="width:100%">
+      <h1>Austin Turturro</h1>
+      <p>CEO & Founder</p>
+      <p>GSD Owner</p>
+      <p><button>Contact</button></p>
+    </div>
+  </nav>
+
+  <div class="center">
+  <h1>Add New Video</h1>
+
+  <div class="bg-image">
+  <form id="survey">
+    <div class="form-group">
+      <label id="name-label" for="name">Video Title</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your video name"
+          required>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Video Description</label>
+      <textarea
+        name="description"
+        id="description"
+        cols="30"
+        rows="10"
+        class="input-textarea"
+        placeholder="Enter your description here..."
+        required>
+      </textarea>
+    </div>
+
+  <div class="form-group">
+  <label for="video">Video</label>
+  <input
+    type="file"
+    name="file"
+    id="file"
+    class="input-file"
+    placeholder="Choose File"
+    required>
+  </div>
+
+    <hr>
+
+  <div class="form-group">
+    <p>Choose Collection for Upload</p>
+    <select name="collectionUpload" id="collectionUpload" class="form-control" required>
+      <option disabled selected value>Select an option</option>
+      <option value="collection1">Collection 1</option>
+      <option value="collection1">Collection 2</option>
+      <option value="collection1">Collection 3</option>
+  </select>
+  </div>
+
+  <div class="form-group">
+    <p>Video Security</p>
+    <label for="public">
+      <input
+      name="security"
+      type="radio"
+      id="public"
+      class="input-radio">
+      Public</label>
+    <label for="private">
+      <input
+        type="radio"
+        name="security"
+        id="private"
+        class="input-radio">
+        Private</label>
+  </div>
+
+    <hr>
+    <br>
+  <div class="form-group">
+    <input type="submit" value="Submit">
+  </div>
+</form>
+  </div>
+</div>
+
+
+<footer></footer>
+</body>
+</html>
