@@ -1,3 +1,4 @@
+/* DEFAULTS */
 *,
 *::before,
 *::after {
@@ -24,8 +25,7 @@ body {
   box-sizing: border-box;
 }
 
-
-/* ||MASTHEAD */
+/* MASTER HEADER */
 .masthead {
   top: 0;
   height: 50px;
@@ -55,10 +55,12 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 5px;
+  background-color: #8e9aaf;
+  margin-left: 5px;
 }
 
 .microscope:hover {
-  background-color: #8e9aaf;
+  background-color: #fff;
 }
 
 .search-bar-div {
@@ -92,18 +94,16 @@ body {
   color: white;
 }
 
-
-/* ||BEGINING BAR */
 .preheader-pic {
-  background-image: url("imgs/german_shepherd_4k_hd_2.jpg");
+  background-image: url("imgs/brandZK.png");
   width: 100%;
-  height: 500px;
+  height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 
-/* ||NAV BAR */
+/* User - Nav */
 header {
   margin-left: 140px;
   height: 150px;
@@ -143,12 +143,12 @@ header {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  border-radius: 3px;
+  border-radius: 8px;
 }
 
 .subscribe-btn:hover {
   transform: scale(1.2, 1.2);
-  color: #6c757d;
+  cursor: pointer;
 }
 
 nav {
@@ -169,23 +169,17 @@ nav {
   background-color: #6c757d;
 }
 
-.nav-home-link:hover,
-.nav-guitar-link:hover,
-.nav-lesson-link:hover,
-.nav-pro-link:hover {
+.nav-link:hover {
   transform: scale(1.1, 1.1);
   text-decoration: underline;
 }
 
-.nav-home-link:active,
-.nav-guitar-link:active,
-.nav-lesson-link:active,
-.nav-pro-link:active {
+.nav-link:active {
   transform: scale(1, 1);
   text-decoration: underline;
 }
 
-/* ||MAIN SECTION*/
+/* MAIN SECTION */
 main {
   margin-left: 160px;
 }
@@ -212,7 +206,7 @@ td {
 }
 
 
-/* || LEFT SELECTOR */
+/* LEFT NAV */
 .left-selector {
   background-color: #2f3136;
   width: 150px;
@@ -227,10 +221,7 @@ td {
   z-index: 11;
 }
 
-.home-btn,
-.explore-btn,
-.subs-btn,
-.library-btn {
+.left-nav-btn {
   padding: 5px;
   margin: auto;
   background-color: #6c757d;
@@ -240,21 +231,11 @@ td {
   align-items: center;
 }
 
-.home-img,
-.explore-img,
-.subs-img,
-.library-img {
+.left-nav-img {
   width: 40px;
   height: 40px;
-  padding: 5px;
+  padding: 11px;
   transition: 0.5s;
-}
-
-.home-btn:hover,
-.explore-btn:hover,
-.subs-btn:hover,
-.library-btn:hover {
-  transform: scale(1.2, 1.2);
 }
 
 .credit {
@@ -263,7 +244,7 @@ td {
 }
 
 
-/* || FOOTER */
+/* FOOTER */
 .footer {
   height: 150px;
   margin-left: 160px;
@@ -311,7 +292,7 @@ td {
 
 
 /* UPLOAD PAGE */
-.upload-form {
+/* .upload-form {
   background-color: #6c757d;
   width: 500px;
   position: relative;
@@ -337,4 +318,4 @@ select,
 
 .video-input {
   margin-left: 50px;
-}
+} */
